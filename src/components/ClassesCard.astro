@@ -1,0 +1,25 @@
+---
+interface Props {
+  image: string;
+  heading: string;
+  linkTarget: string;
+  trainer: {
+    name: string;
+    avatar: string;
+  };
+}
+
+const { heading, image, linkTarget, trainer } = Astro.props;
+---
+
+<a
+  href={linkTarget}
+  class="bg-orange-500 px-4 pt-56 w-full rounded-xl text-left bg-cover hover:shadow-2xl transition-shadow ease-in-out duration-300"
+  style={`background-image: url(${image});`}
+>
+  <div class="bg-white py-6 px-8 rounded-xl shadow-2xl -mb-4">
+    <h3 class="text-2xl">{heading}</h3>
+    <hr class="block my-4" />
+    <span class="underline underline-offset-8">See more</span>
+  </div>
+</a>

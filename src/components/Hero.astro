@@ -1,0 +1,36 @@
+---
+import MembersCtaCard from "./MembersCtaCard.astro";
+---
+
+<section class="bg-neutral-900 pt-24 pb-48 text-white">
+  <div class="container grid grid-cols-2 gap-24">
+    <div class="">
+      <h1 class="text-3xl md:text-5xl font-sans font-bold mb-8">
+        Get the best fitness experience, and reshape your life
+      </h1>
+      <p class="font-thin">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a class="button-primary" href="/classes"> Book Class</a>
+        <a class="button-gray" href="/Classes?type=free">
+          Free Online Classes
+        </a>
+      </div>
+    </div>
+    <div class="relative flex items-end">
+      <video
+        class="w-full h-full object-cover rounded-md absolute z-0"
+        loop
+        muted
+        autoplay
+      >
+        <source type="video/mp4" src="/media/hero-video.mp4" />
+      </video>
+      <MembersCtaCard />
+    </div>
+  </div>
+</section>

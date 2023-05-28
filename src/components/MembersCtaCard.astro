@@ -1,0 +1,24 @@
+<div class="bg-white p-4 z-10 relative inline-flex flex-col rounded-md m-4">
+  <h2 class="text-neutral-900">Free Online classes</h2>
+  <hr class="my-2 block" />
+  <div class="flex gap-4">
+    <ul class="flex [&>*:first-child]:ml-0 items-center">
+      {
+        Array.from(Array(5)).map((_item, index) => (
+          <li class="-ml-3">
+            <img
+              class="rounded-full w-8 border-2 border-white"
+              src={`https://xsgames.co/randomusers/avatar.php?g=${
+                index % 2 == 0 ? "male" : "female"
+              }`}
+            />
+          </li>
+        ))
+      }
+    </ul>
+    <a
+      class="py-2 px-4 rounded text-sm bg-orange-200 text-orange-600 inline-flex justify-center items-center"
+      href="/signup">Get your free trial</a
+    >
+  </div>
+</div>

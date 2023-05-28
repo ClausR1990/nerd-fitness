@@ -1,0 +1,68 @@
+---
+const mainNavItems = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
+  {
+    title: "Classes",
+    href: "/classes",
+  },
+  {
+    title: "Plans",
+    href: "/plans",
+  },
+  {
+    title: "Contact",
+    href: "/contant",
+  },
+];
+const secondNavItems = [
+  {
+    title: "Login",
+    href: "/login",
+  },
+  {
+    title: "Signup",
+    href: "/signup",
+    isButton: true,
+  },
+];
+---
+
+<nav role="navigation" class="bg-neutral-900 py-4">
+  <div class="container flex justify-between items-center">
+    <a role="menuitem" href="">
+      <h1 class="text-white font-bold tracking-wide">NERD FITNESS</h1>
+    </a>
+    <ul class="flex justify-center items-center gap-8">
+      {
+        mainNavItems.map((navItem) => (
+          <li role="menuitem">
+            <a class="text-white" href={navItem.href}>
+              {navItem.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <ul class="flex items-center gap-8">
+      {
+        secondNavItems.map((navItem) => (
+          <li role="menuitem">
+            <a
+              class={navItem.isButton ? `button-primary` : `text-white`}
+              href={navItem.href}
+            >
+              {navItem.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
