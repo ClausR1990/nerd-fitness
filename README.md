@@ -1,6 +1,6 @@
 # Astro Starter Kit: Basics
 
-###[Visit the site](https://clausr1990.github.io/nerd-fitness/)
+### [Visit the site](https://clausr1990.github.io/nerd-fitness/)
 
 ```
 npm install
