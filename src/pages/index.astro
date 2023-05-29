@@ -16,12 +16,12 @@ import Layout from "../layouts/Layout.astro";
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <div class="flex flex-row gap-8 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {
             Array.from(Array(3)).map((_) => (
               <ClassesCard
                 heading="Yoga, Pilates, and barres"
-                image="/images/gym-pic-01.jpg"
+                image="./images/gym-pic-01.jpg"
                 linkTarget=""
                 trainer={{ avatar: "", name: "" }}
               />

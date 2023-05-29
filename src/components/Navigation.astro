@@ -39,7 +39,7 @@ const secondNavItems = [
     <a role="menuitem" href="">
       <h1 class="text-white font-bold tracking-wide">NERD FITNESS</h1>
     </a>
-    <ul class="flex justify-center items-center gap-8">
+    <ul class="hidden md:flex justify-center items-center gap-8">
       {
         mainNavItems.map((navItem) => (
           <li role="menuitem">
@@ -50,7 +50,7 @@ const secondNavItems = [
         ))
       }
     </ul>
-    <ul class="flex items-center gap-8">
+    <ul class="hidden md:flex items-center gap-8">
       {
         secondNavItems.map((navItem) => (
           <li role="menuitem">

@@ -2,8 +2,10 @@
 import MembersCtaCard from "./MembersCtaCard.astro";
 ---
 
-<section class="bg-neutral-900 pt-24 pb-48 text-white">
-  <div class="container grid grid-cols-2 gap-24">
+<section class="bg-neutral-900 pt-12 pb-24 md:pt-24 md:pb-48 text-white">
+  <div
+    class="container text-center md:text-left grid grid-cols-1 md:grid-cols-2 gap-24"
+  >
     <div class="">
       <h1 class="text-3xl md:text-5xl font-sans font-bold mb-8">
         Get the best fitness experience, and reshape your life
@@ -14,21 +16,21 @@ import MembersCtaCard from "./MembersCtaCard.astro";
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <div class="mt-8 flex gap-4">
+      <div class="mt-8 flex gap-4 justify-center md:justify-start">
         <a class="button-primary" href="/classes">Book Class</a>
         <a class="button-gray" href="/classes?type=free">
           Free Online Classes
         </a>
       </div>
     </div>
-    <div class="relative flex items-end">
+    <div class="relative flex items-end min-h-[300px] md:min-h-max">
       <video
         class="w-full h-full object-cover rounded-md absolute z-0"
         loop
         muted
         autoplay
       >
-        <source type="video/mp4" src="/media/hero-video.mp4" />
+        <source type="video/mp4" src="./media/hero-video.mp4" />
       </video>
       <MembersCtaCard />
     </div>
