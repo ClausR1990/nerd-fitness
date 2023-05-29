@@ -3,6 +3,7 @@ import ClassesCard from "../components/ClassesCard.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import priceData from "../content/prices/price-data.json";
+import classData from "../content/classes/class-data.json";
 import Table from "../components/PriceTable/Table.astro";
 ---
 
@@ -19,16 +20,7 @@ import Table from "../components/PriceTable/Table.astro";
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {
-            Array.from(Array(3)).map((_) => (
-              <ClassesCard
-                heading="Yoga, Pilates, and barres"
-                image="./images/gym-pic-01.jpg"
-                linkTarget="/nerd-fitness/"
-                trainer={{ avatar: "", name: "" }}
-              />
-            ))
-          }
+          {classData.map((classItem) => <ClassesCard {...classItem} />)}
         </div>
         <a class="button-gray mt-24" href="/nerd-fitness/classes"
           >See all classes</a

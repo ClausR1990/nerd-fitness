@@ -1,0 +1,29 @@
+[
+  {
+    "image": "./images/gym-pic-01.jpg",
+    "heading": "Yoga, Pilates, and barres",
+    "linkTarget": "/nerd-fitness/",
+    "trainer": {
+      "name": "John Trenalot",
+      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
+    }
+  },
+  {
+    "image": "./images/gym-pic-01.jpg",
+    "heading": "Yoga, Pilates, and barres",
+    "linkTarget": "/nerd-fitness/",
+    "trainer": {
+      "name": "John Trenalot",
+      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
+    }
+  },
+  {
+    "image": "./images/gym-pic-01.jpg",
+    "heading": "Yoga, Pilates, and barres",
+    "linkTarget": "/nerd-fitness/",
+    "trainer": {
+      "name": "John Trenalot",
+      "avatar": "https://xsgames.co/randomusers/avatar.php?g=male"
+    }
+  }
+]

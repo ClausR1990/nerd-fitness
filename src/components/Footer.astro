@@ -1,0 +1,24 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<footer class="pt-12 md:pt-24 pb-6 bg-neutral-900">
+  <div class="container">
+    <div
+      role="menu"
+      class="flex flex-col md:flex-row justify-between items-center gap-y-6"
+    >
+      <Logo />
+      <ul class="flex justify-center items-center gap-8 text-neutral-400">
+        <li><a href="/nerd-fitness/privacy-policy">Privacy policy</a></li>
+        <li><a href="/nerd-fitness/terms">Terms and conditions</a></li>
+        <li><a href="/nerd-fitness/contact">Contact</a></li>
+      </ul>
+      <ul class="flex justify-center items-center gap-2">
+        <li><i class="fa-solid fa-fire text-white text-2xl"></i></li>
+        <li><i class="fa-solid fa-hand text-white text-2xl"></i></li>
+        <li><i class="fa-solid fa-umbrella text-white text-2xl"></i></li>
+      </ul>
+    </div>
+  </div>
+</footer>

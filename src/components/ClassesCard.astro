@@ -18,7 +18,11 @@ const { heading, image, linkTarget, trainer } = Astro.props;
   style={`background-image: url(${image});`}
 >
   <div class="bg-white py-6 px-8 rounded-xl shadow-2xl -mb-4">
-    <h3 class="text-2xl">{heading}</h3>
+    <div class="flex gap-3 items-center mb-6">
+      <img class="rounded-full w-8" src={trainer.avatar} alt="" />
+      <span>{trainer.name}</span>
+    </div>
+    <h3 class="text-3xl">{heading}</h3>
     <hr class="block my-4" />
     <span class="underline underline-offset-8">See more</span>
   </div>

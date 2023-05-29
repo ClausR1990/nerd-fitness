@@ -31,12 +31,20 @@
   {
     "promoted": "Popular",
     "variant": "dark",
-    "title": "Basic",
-    "description": "This plan is for those who is just starting out",
-    "price": 99,
+    "title": "Standard",
+    "description": "This plan is for those who wants the best exprience at a greate price",
+    "price": 149,
     "pricePrefix": "$",
     "priceSurfix": "per month",
     "features": [
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
       {
         "title": "8 online classes per month",
         "icon": "fa-solid fa-check"
@@ -60,12 +68,20 @@
     }
   },
   {
-    "title": "Basic",
-    "description": "This plan is for those who is just starting out",
-    "price": 99,
+    "title": "Premuim",
+    "description": "This plan is for the big spender type. Mr. want it all!",
+    "price": 299,
     "pricePrefix": "$",
     "priceSurfix": "per month",
     "features": [
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
       {
         "title": "8 online classes per month",
         "icon": "fa-solid fa-check"
