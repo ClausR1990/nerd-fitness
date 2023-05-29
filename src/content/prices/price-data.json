@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Basic",
+    "description": "This plan is for those who is just starting out",
+    "price": 99,
+    "pricePrefix": "$",
+    "priceSurfix": "per month",
+    "features": [
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      }
+    ],
+    "cta": {
+      "title": "Choose plan",
+      "target": "/nerd-fitness/signup"
+    }
+  },
+  {
+    "promoted": "Popular",
+    "variant": "dark",
+    "title": "Basic",
+    "description": "This plan is for those who is just starting out",
+    "price": 99,
+    "pricePrefix": "$",
+    "priceSurfix": "per month",
+    "features": [
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      }
+    ],
+    "cta": {
+      "title": "Choose plan",
+      "target": "/nerd-fitness/signup"
+    }
+  },
+  {
+    "title": "Basic",
+    "description": "This plan is for those who is just starting out",
+    "price": 99,
+    "pricePrefix": "$",
+    "priceSurfix": "per month",
+    "features": [
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      },
+      {
+        "title": "8 online classes per month",
+        "icon": "fa-solid fa-check"
+      }
+    ],
+    "cta": {
+      "title": "Choose plan",
+      "target": "/nerd-fitness/signup"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+---
+import Column from "./Column.astro";
+import type { Props as ColumProps } from "./Column.astro";
+interface Props {
+  columns: ColumProps[];
+}
+
+const { columns } = Astro.props;
+---
+
+<div
+  class={`mt-12 md:mt-24 grid gap-6 grid-cols-1 md:grid-cols-${columns.length}`}
+>
+  {columns.map((column) => <Column {...column} />)}
+</div>

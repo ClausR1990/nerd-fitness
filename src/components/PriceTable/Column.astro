@@ -1,0 +1,72 @@
+---
+export interface Props {
+  variant?: string;
+  title: string;
+  promoted?: string;
+  description: string;
+  price: number;
+  pricePrefix?: string;
+  priceSurfix?: string;
+  features?: Features[];
+  cta: Cta;
+}
+
+interface Features {
+  title: string;
+  icon: string;
+}
+
+interface Cta {
+  title: string;
+  target: string;
+}
+
+const {
+  title,
+  promoted,
+  description,
+  price,
+  pricePrefix,
+  priceSurfix,
+  features,
+  cta,
+  variant = "light",
+} = Astro.props;
+---
+
+<div
+  class={`hover:scale-105 transition-transform p-6 rounded-lg text-left flex flex-col ${
+    variant === "dark" ? "bg-neutral-900 text-white" : "bg-white"
+  }`}
+>
+  <div class="flex justify-between mb-6">
+    <h3 class="text-xl font-semibold">{title}</h3>
+    {promoted && <span class="button-primary flex">{promoted}</span>}
+  </div>
+  <p class="text-neutral-400">{description}</p>
+  <div class="mt-6">
+    {pricePrefix && <span>{pricePrefix}</span>}
+    <span class="text-5xl font-bold">{price}</span>
+    {priceSurfix && <span>/{priceSurfix}</span>}
+  </div>
+  {
+    features && (
+      <ul class="my-6">
+        {features.map((feature) => (
+          <li class="flex gap-3 items-center mb-3">
+            <i
+              class={`${feature.icon} ${
+                variant === "light" ? "text-orange-600" : ""
+              }`}
+            />
+            <span class="text-neutral-400">{feature.title}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <a
+    class={`mt-auto ${variant === "dark" ? "button-primary" : "button-gray"}`}
+    href={cta.target}>{cta.title}</a
+  >
+</div>

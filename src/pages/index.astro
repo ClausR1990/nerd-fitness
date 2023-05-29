@@ -2,6 +2,8 @@
 import ClassesCard from "../components/ClassesCard.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import priceData from "../content/prices/price-data.json";
+import Table from "../components/PriceTable/Table.astro";
 ---
 
 <Layout title="Welcome to the best fitness experience | Nerd Fitness">
@@ -22,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
               <ClassesCard
                 heading="Yoga, Pilates, and barres"
                 image="./images/gym-pic-01.jpg"
-                linkTarget=""
+                linkTarget="/nerd-fitness/"
                 trainer={{ avatar: "", name: "" }}
               />
             ))
@@ -31,6 +33,18 @@ import Layout from "../layouts/Layout.astro";
         <a class="button-gray mt-24" href="/nerd-fitness/classes"
           >See all classes</a
         >
+      </div>
+    </section>
+    <section class="py-24 text-center bg-neutral-100">
+      <div class="container">
+        <h2 class="text-center font-semibold text-4xl mb-5">
+          Pricing and plans
+        </h2>
+        <p class="text-center max-w-lg mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <Table columns={priceData} />
       </div>
     </section>
   </main>
